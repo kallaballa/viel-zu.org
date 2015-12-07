@@ -9,7 +9,7 @@ body {
 #caption {
   position: relative; 
   height: 0; 
-  left: -320px; 
+  left: -330px; 
   top: 180px; 
   color:white; 
   font-family: 'Rock Salt', cursive; 
@@ -22,13 +22,8 @@ body {
   font-size: 0.8em;  
 }
 
-@media screen and (max-width: 890px) {
-  #caption {
-    position: static; 
-    height: 140px; 
-    margin-left: auto;
-    margin-right: auto;
-  }
+#caption a:visited {
+  color: #f1d398; 
 }
 
 #svgpaper {
@@ -56,6 +51,11 @@ body {
   color: #000; display: box;
 }
 
+.wordcloud {
+  width: 280px;
+  height: 475px;
+}
+
 .page pre {
   font-family: LiberationMono-Regular;
   border-radius: 15px;
@@ -64,4 +64,35 @@ body {
   background-color: #9dba5f;
   padding: 10px; 
   white-space: normal;
+}
+
+@media screen and (max-width: 890px) {
+  #caption {
+    position: static; 
+    height: 140px; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-height: 450px) {
+body { 
+  font-size: 10px;
+}
+
+#caption {
+    position: static; 
+    height: 100px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wordcloud {
+  width: 230px;
+  height: 394px;
+}
+
+.page { 
+  width: 240px;
+}
 }
